@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include("functions/functions.php");
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,17 +41,13 @@
                       <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Categories</a>
                         <ul class="dropdown-menu">
-                          <li><a tabindex="-1" href="#">Second level</a></li>
-                          <li><a href="#">Second level</a></li>
-                          <li><a href="#">Second level</a></li>
+                          <?php getCats(); ?>
                         </ul>
                       </li>
                       <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Brands</a>
                         <ul class="dropdown-menu">
-                          <li><a tabindex="-1" href="#">Second level</a></li>
-                          <li><a href="#">Second level</a></li>
-                          <li><a href="#">Second level</a></li>
+                          <?php getBrands(); ?>
                         </ul>
                       </li>
                     </ul>
